@@ -1,0 +1,85 @@
+/* color palette being used: https://coolors.co/e1eef4-8ecae6-219ebc-023047-ffb703-fb8500 */
+body {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #e1eef4;
+}
+
+#navbar {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    padding: 15px 20px;
+    /* required to not be inline for width and align */
+    display: block;
+    width: 100vw;
+    background-color: #fb8500;
+    text-align: left;
+}
+
+/* setting to important to keep the nav links constant */
+navbar a {
+    text-decoration: none !important;
+    padding: 10px !important;
+    color: black !important;
+    font-weight: 800 !important;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+h1 {
+    padding: 5px 20px;
+    color: #023047;
+}
+
+h3 {
+    font-weight: 200;
+    color: gray;
+}
+
+p {
+    padding: 20px;
+    color: #023047;
+}
+
+/* splitting this out from #welcome-section
+ * so that I can center it and add required styling
+*/
+.welcome-style {
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+
+.welcome-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*
+ * TODO: fix the media queries here - it basically does
+ *       nothing useful.
+*/
+@media only screen and (max-width: 600px) {
+    body {
+        display: inline;
+    }
+
+    #navbar {
+        width: 100vw;
+        background-color: white;
+    }
+
+    #main-doc {
+        width: 100vw;
+    }
+
+    nav a {
+        width: 100vw;
+        display: block;
+    }
+}
