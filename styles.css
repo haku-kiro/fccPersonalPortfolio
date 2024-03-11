@@ -20,10 +20,14 @@ body {
 
 /* setting to important to keep the nav links constant */
 navbar a {
-    text-decoration: none !important;
+    text-decoration: none;
     padding: 10px !important;
     color: black !important;
     font-weight: 800 !important;
+}
+
+navbar a:hover {
+    text-decoration: underline;
 }
 
 #welcome-section {
@@ -61,25 +65,56 @@ p {
 }
 
 /*
- * TODO: fix the media queries here - it basically does
- *       nothing useful.
+ * This is for the project tiles, the intention is to have them
+ * be boxes that format as you add new ones dynamically
+ */
+
+.project-container {
+    display: flex;
+    height: 450px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.project-tile {
+    /* flex related style */
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+    /* tile related style */
+    text-align: center;
+    background-color: #219ebc;
+    padding: 10px;
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800 !important;
+}
+
+.socials-container {
+    display: flex;
+    height: 200px;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.socials-tile {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+}
+
+/*
+ * Media query just changes the navbar color to white when
+ * on a smaller screen; everything else is made responsive with
+ * flexboxes
 */
 @media only screen and (max-width: 600px) {
-    body {
-        display: inline;
-    }
-
     #navbar {
         width: 100vw;
         background-color: white;
-    }
-
-    #main-doc {
-        width: 100vw;
-    }
-
-    nav a {
-        width: 100vw;
-        display: block;
     }
 }
