@@ -5,4 +5,4 @@ This website contains all the other projects that I've worked on for the various
 
 # Hosted
 
-You can access the site at, [haku-kiro.github.io/sebastianThrunPage/](https://haku-kiro.github.io/sebastianThrunPage/)
+You can access the site at, [https://haku-kiro.github.io/fccPersonalPortfolio/](https://haku-kiro.github.io/fccPersonalPortfolio/)
